@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Picker</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <h1>Design Picker</h1>
+    </header>
+
+    <main>
+        <!-- Upload Section -->
+        <section class="upload-section">
+            <input type="file" id="fileInput" multiple accept="image/*">
+            <button id="analyzeBtn">Analyze Designs</button>
+            <button id="resetBtn">Reset</button>
+            <button id="toggleBgBtn">Toggle Background</button>
+        </section>
+
+        <!-- Image Grid Section -->
+        <section class="image-grid" id="imageGrid">
+            <div class="design-slot">Design A</div>
+            <div class="design-slot">Design B</div>
+        </section>
+
+        <!-- Winner Label -->
+        <section id="winnerLabel" class="winner-label"></section>
+
+        <!-- Scoring Section -->
+        <section class="results-section" id="resultsSection">
+            <!-- Will be filled dynamically by JS -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Design Picker App - MVP</p>
+    </footer>
+
+    <script src="design.js"></script>
+</body>
+</html>
